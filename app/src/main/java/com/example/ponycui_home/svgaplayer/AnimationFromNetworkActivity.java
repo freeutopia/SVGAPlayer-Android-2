@@ -5,12 +5,12 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import androidx.annotation.Nullable;
-import com.tantan.library.svga.ResourceKey;
-import com.tantan.library.svga.SVGALoader;
-import com.tantan.library.svga.SVGAnimationView;
-import com.tantan.library.svga.data.cache.Resource;
-import com.tantan.library.svga.data.request.RequestCallback;
-import com.tantan.library.svga.exception.SVGAException;
+import com.utopia.svga.ResourceKey;
+import com.utopia.svga.SVGALoader;
+import com.utopia.svga.SVGAnimationView;
+import com.utopia.svga.data.cache.Resource;
+import com.utopia.svga.data.request.RequestCallback;
+import com.utopia.svga.exception.SVGAException;
 import org.jetbrains.annotations.NotNull;
 
 public class AnimationFromNetworkActivity extends Activity {

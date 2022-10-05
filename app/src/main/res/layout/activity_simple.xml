@@ -6,14 +6,14 @@
   android:background="#0C000000"
   android:orientation="vertical">
 
-  <com.tantan.library.svga.SVGAnimationView
+  <com.tantan.utopia.svga.SVGAnimationView
     android:id="@+id/svga_view_1"
     android:layout_width="match_parent"
     android:layout_height="200dp"
     android:layout_centerHorizontal="true"
     android:scaleType="centerInside" />
 
-  <com.tantan.library.svga.SVGAnimationView
+  <com.tantan.utopia.svga.SVGAnimationView
     android:id="@+id/svga_view_2"
     android:layout_width="match_parent"
     android:layout_height="300dp"

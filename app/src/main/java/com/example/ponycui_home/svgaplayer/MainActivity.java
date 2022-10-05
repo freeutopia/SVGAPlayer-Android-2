@@ -13,8 +13,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import com.tantan.library.svga.utils.Log;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 
 class SampleItem {
@@ -26,10 +24,6 @@ class SampleItem {
     this.title = title;
     this.intent = intent;
   }
-}
-
-class A {
-  private static final String test = "123";
 }
 
 public class MainActivity extends AppCompatActivity {
@@ -111,27 +105,7 @@ public class MainActivity extends AppCompatActivity {
             LinearLayout linearLayout = new LinearLayout(MainActivity.this);
             TextView textView = new TextView(MainActivity.this);
             textView.setOnClickListener(
-                new View.OnClickListener() {
-                  @Override
-                  public void onClick(View view) {
-                    try {
-                      A a = new A();
-                      Field test = a.getClass().getDeclaredField("test");
-                      test.setAccessible(true);
-                      Log.e("test:" + test.get(a));
-
-                      /*Field modifiers = Field.class.getDeclaredField("modifiers");
-                      modifiers.setAccessible(true);
-                      modifiers.setInt(test, test.getModifiers() & ~Modifier.FINAL);*/
-
-                      test.set(a, "456");
-                      Log.e("test:" + test.get(MainActivity.this));
-                    } catch (Exception e) {
-                      e.printStackTrace();
-                    }
-                    // MainActivity.this.startActivity(MainActivity.this.items.get(i).intent);
-                  }
-                });
+                view1 -> MainActivity.this.startActivity(MainActivity.this.items.get(i).intent));
             textView.setText(MainActivity.this.items.get(i).title);
             textView.setTextSize(24);
             textView.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);

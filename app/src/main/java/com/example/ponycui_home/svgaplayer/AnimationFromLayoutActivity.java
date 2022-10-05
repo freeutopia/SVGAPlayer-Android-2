@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.RelativeLayout;
-import com.tantan.library.svga.SVGALoader;
-import com.tantan.library.svga.SVGAnimationView;
-import com.tantan.library.svga.SVGAnimationView.FrameMode;
+import com.utopia.svga.SVGALoader;
+import com.utopia.svga.SVGAnimationView;
+import com.utopia.svga.SVGAnimationView.FrameMode;
 
 /** Created by cuiminghui on 2017/3/30. 将 svga 文件打包到 assets 文件夹中，然后使用 layout.xml 加载动画。 */
 public class AnimationFromLayoutActivity extends Activity {

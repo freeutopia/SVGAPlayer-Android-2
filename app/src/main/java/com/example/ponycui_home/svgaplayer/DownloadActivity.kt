@@ -4,11 +4,11 @@ import android.app.Activity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
-import com.tantan.library.svga.ResourceKey
-import com.tantan.library.svga.SVGALoader
-import com.tantan.library.svga.data.cache.Resource
-import com.tantan.library.svga.data.request.RequestCallback
-import com.tantan.library.svga.exception.SVGAException
+import com.utopia.svga.ResourceKey
+import com.utopia.svga.SVGALoader
+import com.utopia.svga.data.cache.Resource
+import com.utopia.svga.data.request.RequestCallback
+import com.utopia.svga.exception.SVGAException
 
 class DownloadActivity : Activity(), RequestCallback {
   override fun onCreate(savedInstanceState: Bundle?) {

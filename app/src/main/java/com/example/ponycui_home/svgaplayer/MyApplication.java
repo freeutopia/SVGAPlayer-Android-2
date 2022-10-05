@@ -2,12 +2,12 @@ package com.example.ponycui_home.svgaplayer;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
-import com.tantan.library.svga.SVGA;
-import com.tantan.library.svga.SVGAConfig;
-import com.tantan.library.svga.data.cache.Key;
-import com.tantan.library.svga.tracker.CacheTrackerListener;
-import com.tantan.library.svga.tracker.CacheType;
-import com.tantan.library.svga.utils.Log;
+import com.utopia.svga.SVGA;
+import com.utopia.svga.SVGAConfig;
+import com.utopia.svga.data.cache.Key;
+import com.utopia.svga.tracker.CacheTrackerListener;
+import com.utopia.svga.tracker.CacheType;
+import com.utopia.svga.utils.Log;
 import kotlin.Pair;
 
 public class MyApplication extends Application {

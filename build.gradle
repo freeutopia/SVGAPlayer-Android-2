@@ -2,26 +2,17 @@ buildscript {
     repositories {
         maven { url 'https://maven.aliyun.com/repository/google/' }
         maven { url 'https://maven.aliyun.com/repository/public/' }
-        maven {
-            url 'http://maven.p1staff.com/repository/maven-public/'
-        }
     }
 
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.30"
-        classpath 'com.tantanapp.library:libplugin:0.1.12'
     }
 }
-
-apply plugin: "libpluginroot"
 
 allprojects {
     repositories {
         maven { url 'https://maven.aliyun.com/repository/google/' }
         maven { url 'https://maven.aliyun.com/repository/public/' }
-        maven {
-            url 'http://maven.p1staff.com/repository/maven-public/'
-        }
     }
 }

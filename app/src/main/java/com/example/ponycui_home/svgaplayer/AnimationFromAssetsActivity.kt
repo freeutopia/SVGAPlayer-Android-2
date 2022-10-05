@@ -6,10 +6,8 @@ import android.os.Bundle
 import android.widget.FrameLayout.LayoutParams
 import android.widget.FrameLayout
 import android.widget.ImageView
-import com.tantan.library.svga.AnimListener
-import com.tantan.library.svga.SVGALoader
-import com.tantan.library.svga.SVGAnimationView
-import com.tantan.library.svga.utils.Log
+import com.utopia.svga.SVGALoader
+import com.utopia.svga.SVGAnimationView
 
 class AnimationFromAssetsActivity : Activity() {
   lateinit var svgaView: SVGAnimationView
@@ -20,9 +18,9 @@ class AnimationFromAssetsActivity : Activity() {
     //animationView.scaleType = ImageView.ScaleType.CENTER
     //animationView.setOnClickListener { animationView.stepToFrame(currentIndex++, false) }
     val view = FrameLayout(this)
-    view.setBackgroundColor(Color.GRAY)
+    //view.setBackgroundColor(Color.GRAY)
     //view.addView(svgaView, LayoutParams(500, 500))
-    svgaView.scaleType = ImageView.ScaleType.FIT_CENTER
+    svgaView.scaleType = ImageView.ScaleType.FIT_XY
     //view.addView(svgaView, LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT))
     view.addView(svgaView, LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT))
     setContentView(view)
@@ -52,7 +50,6 @@ class AnimationFromAssetsActivity : Activity() {
    */
   private fun loadAnimation1(url: String) {
     svgaView.stopAnimation()
-    val startTime = System.currentTimeMillis();
     SVGALoader.with(this)
       .from(url)
       .into(svgaView)

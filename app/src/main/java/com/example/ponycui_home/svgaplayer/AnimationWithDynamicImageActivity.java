@@ -6,9 +6,9 @@ import android.graphics.Paint.Align;
 import android.os.Bundle;
 import android.text.TextPaint;
 import androidx.annotation.Nullable;
-import com.tantan.library.svga.SVGALoader;
-import com.tantan.library.svga.SVGAnimationView;
-import com.tantan.library.svga.compose.SVGADynamicEntity;
+import com.utopia.svga.SVGALoader;
+import com.utopia.svga.SVGAnimationView;
+import com.utopia.svga.compose.SVGADynamicEntity;
 
 public class AnimationWithDynamicImageActivity extends Activity {
 
