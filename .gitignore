@@ -1,0 +1,73 @@
+debug.trace
+.gradle
+captures
+*.map
+/local.properties
+material-design-icons-1.0.1
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+build
+/build
+unused.txt
+umeng_import.txt
+logs/
+/libs
+test-apks/
+test-plugin/
+debug-apks/
+dexguard-apks/
+signed-release-apks/
+debug-apks/
+dexguard-apks/
+index.md
+index.html
+# built application files
+*.apk
+*.ap_
+*.md5
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+GenerateHoldersMillis.txt
+git_submodule_reset.bat
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+libs/android-support-v7-appcompat.jar
+META-INF/
+build.properties
+obj
+
+# project.properties
+project.properties
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+output.json
+
+temp_build.txt
+
+markForServerProvider
+
+yidun/Log
+yidun/config.ini
+
+/manifestDifferTmp/
+tanker_auto_check_*.txt
+*tanker_auto_check_common.pyc
+
+app/sharedlibrary.properties
+/app
