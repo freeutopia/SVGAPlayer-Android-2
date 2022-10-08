@@ -15,21 +15,24 @@ SVGAVideoEntity 和渲染能力委托给SVGADrawable 处理。 在 SVGADrawable 
 1、SVGA加载模块
 
 （1）资源查找路径，延此路线依次尝试发现对应的缓存资源；资源回调路径，此时已经发现了资源，延此路线做缓存变换，最终输出实体
+![Image text](https://raw.githubusercontent.com/freeutopia/SVGAPlayer-Android-2/main/images/2.png?token=GHSAT0AAAAAABZAZ7YO4RU3SYK5MXMTARBGY2BFVGA)
 
 （2）缓存层次委托模型
+![Image text](https://raw.githubusercontent.com/freeutopia/SVGAPlayer-Android-2/main/images/3.png?token=GHSAT0AAAAAABZAZ7YO4RU3SYK5MXMTARBGY2BFVGA)
 
 （3）缓存模块-UML关系图
+![Image text](https://raw.githubusercontent.com/freeutopia/SVGAPlayer-Android-2/main/images/4.png?token=GHSAT0AAAAAABZAZ7YO4RU3SYK5MXMTARBGY2BFVGA)
 
 2、SVGA解析模块
 
 数据解析模块，主要是把动画资源，从File转化为SVGAVideoEntity，供后续步骤使用；
 
 （1）数据变换逻辑图：
-
+![Image text](https://raw.githubusercontent.com/freeutopia/SVGAPlayer-Android-2/main/images/5.png?token=GHSAT0AAAAAABZAZ7YO4RU3SYK5MXMTARBGY2BFVGA)
 （2）数据解析器：
-
+![Image text](https://raw.githubusercontent.com/freeutopia/SVGAPlayer-Android-2/main/images/6.png?token=GHSAT0AAAAAABZAZ7YO4RU3SYK5MXMTARBGY2BFVGA)
 （3）一个完整的SVGAVideoEntity组成：
-
+![Image text](https://raw.githubusercontent.com/freeutopia/SVGAPlayer-Android-2/main/images/7.png?token=GHSAT0AAAAAABZAZ7YO4RU3SYK5MXMTARBGY2BFVGA)
 3、SVGA渲染模块
 
 SVGAnimationView内部通过ValueAnimator驱动动画执行：
