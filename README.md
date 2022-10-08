@@ -3,7 +3,7 @@
 SVGAPlayer-Android -2 使用原生 Android Canvas 库渲染动画，为你提供高性能、低开销的动画体验。
 
 2.SVGA动画总体实现原理：
-![Image text]([https://raw.githubusercontent.com/freeutopia/SVGAPlayer-Android-2/main/images/1.png](https://raw.githubusercontent.com/freeutopia/SVGAPlayer-Android-2/main/images/1.png?token=GHSAT0AAAAAABZAZ7YO4RU3SYK5MXMTARBGY2BFVGA))
+![Image text](https://raw.githubusercontent.com/freeutopia/SVGAPlayer-Android-2/main/images/1.png?token=GHSAT0AAAAAABZAZ7YO4RU3SYK5MXMTARBGY2BFVGA)
 SVGA动画引擎 先将动画 protobuf 资源转换为 SVGAVideoEntity 数据对象。 继承 ImageView 的SVGAnimationView 将数据对象
 SVGAVideoEntity 和渲染能力委托给SVGADrawable 处理。 在 SVGADrawable 中会将数据对象 SVGAVideoEntity 组建为具有 draw
 能力的SVGACanvasDrawer(实际渲染逻辑处理类)。并在 SVGAnimationView 需要绘制时，调用自己和各个层级SVGALayer 的渲染，从而达到动画效果。
