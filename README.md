@@ -1,8 +1,5 @@
 # SVGAPlayer-Android-2
-
 SVGAPlayer-Android -2 使用原生 Android Canvas 库渲染动画，为你提供高性能、低开销的动画体验。
-
-# SVGAPlayer
 
 ## 介绍
 
