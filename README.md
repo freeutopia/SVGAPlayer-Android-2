@@ -2,6 +2,17 @@
 
 SVGAPlayer-Android -2 使用原生 Android Canvas 库渲染动画，为你提供高性能、低开销的动画体验。
 
+# SVGAPlayer
+
+## 介绍
+
+`SVGAPlayer` 是一个轻量的动画渲染库。你可以使用[工具](http://svga.io/designer.html)从 `Adobe Animate CC` 或者 `Adobe After Effects` 中导出动画文件，然后使用 `SVGAPlayer` 在移动设备上渲染并播放。
+
+`SVGAPlayer-Android` 使用原生 Android Canvas 库渲染动画，为你提供高性能、低开销的动画体验。
+
+如果你想要了解更多细节，请访问[官方网站](http://svga.io/)。
+
+
 ### 1.动画总体实现原理：
 
 ![1.png](https://s2.loli.net/2022/10/08/w9L6OrtRzYdb4A1.png)
